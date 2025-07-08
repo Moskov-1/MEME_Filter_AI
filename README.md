@@ -13,6 +13,7 @@ This notebook:
 - Embeds meme content using CLIP (Contrastive Language–Image Pre-training) from OpenAI.
 - Supports search via natural language queries (e.g., `"spongebob meme"` or `"crying baby"`).
 - Evaluates relevance by comparing CLIP text/image embeddings.
+- **Shows a comparison for search with both memes + text and search with only memes.**
 
 > ⚠️ Current limitation: The Imgflip API mostly provides memes **without overlaid text**, which reduces performance. To get the best results, use memes **with visible text**.
 
@@ -30,19 +31,32 @@ This notebook:
 
 ## 🚀 Usage
 
-1. **Download the Notebook**
-   - Clone this repo or download `memes.ipynb`.
+1.  **Download the Notebook**
+    - Clone this repo or download `memes.ipynb`.
 
-2. **Run in Google Colab**
-   - Upload the notebook to [Google Colab](https://colab.research.google.com).
-   - All meme images will be saved to `content/memes`.
+2.  **Or Run in Google Colab**
+    - Upload the notebook to [Google Colab](https://colab.research.google.com).
+    - All meme images will be saved to `content/memes`.
 
-3. **Run all cells**
-   - It will:
-     - Fetch memes from the web
-     - Extract features via CLIP
-     - Allow you to search using keywords
+3.  **Run all cells**
+    - It will:
+        - Fetch memes from the web
+        - Extract features via CLIP
+        - Allow you to search using keywords
 
+4.  **Run Without Text Search**
+    - It will:
+        - Fetch the memes Collected from API
+        - Will Search Based on Image Alone
+        - Allow you to search using keywords   
+        - Gives mediocre results
+        
+5.  **Run Text Search**
+    - It will:
+        - Fetch the memes Collected from Drive
+        - Will Search on Multi Modal Data (Image + Text)
+        - Allow you to search using keywords   
+        - Gives Proper results 
 ---
 
 ## 🔍 Sample Search Queries
@@ -67,4 +81,3 @@ Try searches like:
 ---
 
 ## 📁 Folder Structure
-
